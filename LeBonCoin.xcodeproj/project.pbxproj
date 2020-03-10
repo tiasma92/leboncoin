@@ -13,6 +13,10 @@
 		CDE8E7F724164BE5007805DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDE8E7F524164BE5007805DE /* Main.storyboard */; };
 		CDE8E7F924164BE6007805DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDE8E7F824164BE6007805DE /* Assets.xcassets */; };
 		CDE8E7FC24164BE6007805DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDE8E7FA24164BE6007805DE /* LaunchScreen.storyboard */; };
+		CDE8E80424164DDB007805DE /* ApiHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE8E80324164DDB007805DE /* ApiHelper.swift */; };
+		CDE8E80624164EB3007805DE /* ApiResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE8E80524164EB3007805DE /* ApiResult.swift */; };
+		CDE8E8082416858C007805DE /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE8E8072416858C007805DE /* ItemCell.swift */; };
+		CDE8E80A2416A2E6007805DE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE8E8092416A2E6007805DE /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		CDE8E7F824164BE6007805DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDE8E7FB24164BE6007805DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDE8E7FD24164BE6007805DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDE8E80324164DDB007805DE /* ApiHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiHelper.swift; sourceTree = "<group>"; };
+		CDE8E80524164EB3007805DE /* ApiResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResult.swift; sourceTree = "<group>"; };
+		CDE8E8072416858C007805DE /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		CDE8E8092416A2E6007805DE /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,10 @@
 				CDE8E7F824164BE6007805DE /* Assets.xcassets */,
 				CDE8E7FA24164BE6007805DE /* LaunchScreen.storyboard */,
 				CDE8E7FD24164BE6007805DE /* Info.plist */,
+				CDE8E80324164DDB007805DE /* ApiHelper.swift */,
+				CDE8E80524164EB3007805DE /* ApiResult.swift */,
+				CDE8E8072416858C007805DE /* ItemCell.swift */,
+				CDE8E8092416A2E6007805DE /* Extensions.swift */,
 			);
 			path = LeBonCoin;
 			sourceTree = "<group>";
@@ -138,9 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDE8E80424164DDB007805DE /* ApiHelper.swift in Sources */,
 				CDE8E7F424164BE5007805DE /* ViewController.swift in Sources */,
+				CDE8E8082416858C007805DE /* ItemCell.swift in Sources */,
+				CDE8E80624164EB3007805DE /* ApiResult.swift in Sources */,
 				CDE8E7F024164BE5007805DE /* AppDelegate.swift in Sources */,
 				CDE8E7F224164BE5007805DE /* SceneDelegate.swift in Sources */,
+				CDE8E80A2416A2E6007805DE /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +303,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XD435DP6J5;
 				INFOPLIST_FILE = LeBonCoin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +311,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Mattias.LeBonCoin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -305,6 +322,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XD435DP6J5;
 				INFOPLIST_FILE = LeBonCoin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +330,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Mattias.LeBonCoin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
