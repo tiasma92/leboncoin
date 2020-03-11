@@ -23,3 +23,8 @@ struct Image: Decodable {
     var small: String?
     var thumb: String?
 }
+
+struct Category: Decodable {
+    var id: Int
+    var name: String
+}
